@@ -15,8 +15,8 @@ function setup() {
   i = 0;
   j = 0;
 
-  // background(4, 99, 128);
   bg = [89, 216, 230];
+
   background(bg);
 
   createElement('p', 'color a');
@@ -46,6 +46,22 @@ function setup() {
 
   createElement('p', 'y distortion');
   jSlider = createSlider(0, 10, 0);
+
+  createButton('log params').mousePressed(function() {
+    console.log('-----------------------------------------')
+    console.log('-----------------------------------------')
+    console.log('-----------------------------------------')
+    console.log('bg = ', bg);
+    console.log('bg opac = ', bgSlider.value());
+    console.log('col a = ', colorA.levels);
+    console.log('col b = ', colorA.levels);
+    console.log('r = ', rSlider.value());
+    console.log('i = ', iSlider.value());
+    console.log('j = ', jSlider.value());
+    console.log('-----------------------------------------')
+    console.log('-----------------------------------------')
+    console.log('-----------------------------------------')
+  });
 }
 
 function draw() {
