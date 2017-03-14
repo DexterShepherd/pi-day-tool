@@ -37,7 +37,7 @@ function setup() {
   createElement('div')
 
   createElement('p', 'bg opacity');
-  bgSlider = createSlider(0, 255, 5);
+  bgSlider = createSlider(0, 50.0, 5);
 
 
   createElement('p', 'radius');
