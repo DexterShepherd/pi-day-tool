@@ -45,10 +45,10 @@ function setup() {
 
   createElement('div')
   createElement('p', 'x distortion');
-  iSlider = createSlider(0, 10, 0);
+  iSlider = createSlider(0.0, 10.0, 0, 0.1);
 
   createElement('p', 'y distortion');
-  jSlider = createSlider(0, 10, 0);
+  jSlider = createSlider(0.0, 10.0, 0, 0.1);
 
   createElement('div')
   createButton('log params').mousePressed(function() {
