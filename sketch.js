@@ -34,19 +34,23 @@ function setup() {
     bg = hexToRgb(this.value());
   });
 
+  createElement('div')
+
   createElement('p', 'bg opacity');
   bgSlider = createSlider(0, 255, 5);
 
 
-  createElement('p', 'raduis');
+  createElement('p', 'radius');
   rSlider = createSlider(10, 200, 100);
 
+  createElement('div')
   createElement('p', 'x distortion');
   iSlider = createSlider(0, 10, 0);
 
   createElement('p', 'y distortion');
   jSlider = createSlider(0, 10, 0);
 
+  createElement('div')
   createButton('log params').mousePressed(function() {
     console.log('-----------------------------------------')
     console.log('-----------------------------------------')
